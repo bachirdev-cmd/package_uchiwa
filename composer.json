@@ -1,0 +1,33 @@
+{
+    "name": "diame/appdaf",                           
+    "description": "Application DAF de gestion avec architecture modulaire",
+    "type": "project",                                 
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pabass Diamé",
+            "email": "ton@email.com"
+        }
+    ],
+    "require": {
+        "cloudinary/cloudinary_php": "^3.1",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppDAF\\Repository\\": "src/repository/",
+            "AppDAF\\Service\\": "src/service/",
+            "AppDAF\\Controller\\": "src/controller/",
+            "AppDAF\\Core\\": "app/core/",
+            "AppDAF\\Abstracts\\": "app/core/abstract/",
+            "AppDAF\\Enum\\": "src/enum/",
+            "AppDAF\\Entity\\": "src/entity/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public",
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
