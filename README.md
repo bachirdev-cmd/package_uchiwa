@@ -18,7 +18,7 @@ Framework PHP modulaire pour développer des applications de gestion citoyenne a
 ## 📦 Installation
 
 ```bash
-composer require diame/appdaf
+composer require bachirdev-cmd/packages
 ```
 
 ## 🛠️ Structure
@@ -102,8 +102,8 @@ class CitoyenService extends Singleton
 ### Installation dev
 
 ```bash
-git clone https://github.com/bachirdev-cmd/packages.git
-cd packages
+git clone https://github.com/bachirdev-cmd/package_uchiwa.git
+cd package_uchiwa
 composer install
 ```
 

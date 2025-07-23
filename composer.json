@@ -3,7 +3,7 @@
     "description": "Framework PHP modulaire pour applications de gestion citoyenne avec architecture DI et pattern Repository",
     "type": "library",
     "keywords": ["php", "framework", "dependency-injection", "repository-pattern", "modular", "mvc"],
-    "homepage": "https://github.com/bachirdev-cmd/packages",
+    "homepage": "https://github.com/bachirdev-cmd/package_uchiwa",
     "license": "MIT",
     "authors": [
         {
