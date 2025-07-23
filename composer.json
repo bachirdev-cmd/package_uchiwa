@@ -1,12 +1,14 @@
 {
-    "name": "diame/appdaf",                           
-    "description": "Application DAF de gestion avec architecture modulaire",
-    "type": "project",                                 
+    "name": "diame/appdaf",
+    "description": "Framework PHP modulaire pour applications de gestion citoyenne avec architecture DI et pattern Repository",
+    "type": "library",
+    "keywords": ["php", "framework", "dependency-injection", "repository-pattern", "modular", "mvc"],
+    "homepage": "https://github.com/bachirdev-cmd/packages",
     "license": "MIT",
     "authors": [
         {
             "name": "Pabass Diamé",
-            "email": "ton@email.com"
+            "email": "pabassdiame76@gmail.com"
         }
     ],
     "require": {
