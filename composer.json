@@ -8,7 +8,14 @@
             "AppDAF\\CORE\\": "app/core/",
             "AppDAF\\ABSTRACT\\": "app/core/abstract/",
             "AppDAF\\ENUM\\": "src/enum/",
-            "AppDAF\\ENTITY\\": "src/entity/"
+            "AppDAF\\ENTITY\\": "src/entity/",
+            "AppDAF\\CONFIG\\": "app/config/",
+            "AppDAF\\CONFIG\\INTERFACES\\": "app/config/interfaces/",
+            "AppDAF\\MIGRATION\\": "migration/",
+            "AppDAF\\MIGRATION\\INTERFACES\\": "migration/interfaces/",
+            "AppDAF\\MIGRATION\\SERVICES\\": "migration/services/",
+            "AppDAF\\SEEDERS\\": "seeders/",
+            "AppDAF\\SEEDERS\\SERVICES\\": "seeders/services/"
         }
     },
     "require": {

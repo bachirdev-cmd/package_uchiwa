@@ -47,11 +47,18 @@ class ComposerStaticInite5a80b9228b8563bc77667253d4263be
         'A' => 
         array (
             'AppDAF\\SERVICE\\' => 15,
+            'AppDAF\\SEEDERS\\SERVICES\\' => 24,
+            'AppDAF\\SEEDERS\\' => 15,
             'AppDAF\\REPOSITORY\\' => 18,
+            'AppDAF\\MIGRATION\\SERVICES\\' => 26,
+            'AppDAF\\MIGRATION\\INTERFACES\\' => 28,
+            'AppDAF\\MIGRATION\\' => 17,
             'AppDAF\\ENUM\\' => 12,
             'AppDAF\\ENTITY\\' => 14,
             'AppDAF\\CORE\\' => 12,
             'AppDAF\\CONTROLLER\\' => 18,
+            'AppDAF\\CONFIG\\INTERFACES\\' => 25,
+            'AppDAF\\CONFIG\\' => 14,
             'AppDAF\\ABSTRACT\\' => 16,
         ),
     );
@@ -114,9 +121,29 @@ class ComposerStaticInite5a80b9228b8563bc77667253d4263be
         array (
             0 => __DIR__ . '/../..' . '/src/service',
         ),
+        'AppDAF\\SEEDERS\\SERVICES\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/seeders/services',
+        ),
+        'AppDAF\\SEEDERS\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/seeders',
+        ),
         'AppDAF\\REPOSITORY\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/repository',
+        ),
+        'AppDAF\\MIGRATION\\SERVICES\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/migration/services',
+        ),
+        'AppDAF\\MIGRATION\\INTERFACES\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/migration/interfaces',
+        ),
+        'AppDAF\\MIGRATION\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/migration',
         ),
         'AppDAF\\ENUM\\' => 
         array (
@@ -133,6 +160,14 @@ class ComposerStaticInite5a80b9228b8563bc77667253d4263be
         'AppDAF\\CONTROLLER\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/controller',
+        ),
+        'AppDAF\\CONFIG\\INTERFACES\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/config/interfaces',
+        ),
+        'AppDAF\\CONFIG\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/config',
         ),
         'AppDAF\\ABSTRACT\\' => 
         array (

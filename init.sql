@@ -1,15 +1,15 @@
 DO $$
 BEGIN
    IF NOT EXISTS (
-      SELECT FROM pg_database WHERE datname = 'appdaf'
+      SELECT FROM pg_database WHERE datname = 'app_daf'
    ) THEN
-      CREATE DATABASE appdaf;
+      CREATE DATABASE app_daf;
    END IF;
 END
 $$;
 
 
-\c appdaf;
+\c app_daf;
 
 CREATE TABLE citoyen (
     id SERIAL PRIMARY KEY,

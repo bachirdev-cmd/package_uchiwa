@@ -3,25 +3,31 @@
 namespace AppDAF\CORE;
 
 use AppDAF\ENUM\ClassName;
+use AppDAF\CONFIG\ServiceContainer;
 
 class App
 {
+    private static ?ServiceContainer $container = null;
 
-    private static array $dependencies;
-
-    public static function  getDependencie(ClassName $className): mixed
+    public static function getDependencie(ClassName $className): mixed
     {
-        /** @var array $config */
-        self::$dependencies = yaml_parse_file('../app/config/services.yml');
-        if (array_key_exists($className->value, self::$dependencies)) {
-            if (!method_exists(self::$dependencies[$className->value], METHODE_INSTANCE_NAME)) {
-                throw new \Exception("Error Processing Request", 1);
-            }
-
-        } else {
-            return throw new \Exception("La dependance $className->value est null", 1);
+        if (self::$container === null) {
+            self::$container = new ServiceContainer();
         }
 
-        return self::$dependencies[$className->value]::getInstance();
+        if (!self::$container->has($className->value)) {
+            throw new \Exception("La dependance {$className->value} est introuvable", 1);
+        }
+
+        return self::$container->get($className->value);
+    }
+
+    public static function getContainer(): ServiceContainer
+    {
+        if (self::$container === null) {
+            self::$container = new ServiceContainer();
+        }
+        
+        return self::$container;
     }
 }
