@@ -3,6 +3,7 @@
 namespace AppDAF\CORE;
 
 use PDO;
+use AppDAF\CONFIG\DatabaseConfig;
 
 class Database extends Singleton
 {
@@ -16,11 +17,13 @@ class Database extends Singleton
     public function __construct()
     {
         try {
-            $dsn = DB_DRIVE . ':host=' . DB_HOST . ';port=' . DB_PORT . ';dbname=' . DB_NAME;
+            $dbConfig = new DatabaseConfig();
+            
+            $dsn = "pgsql:host={$dbConfig->getHost()};port={$dbConfig->getPort()};dbname={$dbConfig->getDatabase()}";
             $this->pdo = new PDO(
                 $dsn,
-                DB_USER,
-                DB_PASSWORD,
+                $dbConfig->getUsername(),
+                $dbConfig->getPassword(),
                 self::$configDefault
             );
         } catch (\PDOException $e) {
