@@ -28,6 +28,12 @@
             "AppDAF\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+     "repositories": [
+        {
+            "type": "path",
+            "url": "../bachir_packagist"
+        }
+    ],
     "prefer-stable": true
 }
